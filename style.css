@@ -1,0 +1,71 @@
+body {
+	color: #ddd;
+	padding: 0;
+	margin: 0;
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: linear-gradient(217deg, rgba(10,10,10,0.9), rgba(10,10,10,0.9)), url("background.jpg");
+	background-size: cover;
+	background-position: center center;
+}
+
+.heading h1, h2{
+	text-align: center;
+	font-family: 'Andale Mono', monospace;
+}
+
+.subheading {
+	padding: 0 1em;
+	max-width: 400px;
+}
+.subheading p {
+	text-align: center;
+	font-family: 'Andale Mono', monospace;
+}
+
+
+.logo{
+	text-align: center;
+	padding: 1em;
+}
+
+.logo img {
+	max-width: 100%;
+	border-radius: 50%;
+	box-shadow: 0px 0px 15px #00ffccff;
+}
+
+.social-links {
+	display: flex;
+	justify-content: center;
+}
+
+.social-links img{
+	width: 2em;
+	padding: 0.5em;
+	opacity: 0.5;
+}
+
+.social-links img:hover {
+	opacity: 1;
+}
+
+#decentraland {
+	max-width: 60px;
+	padding: 1em;
+}
+
+#decentraland img{
+	width: 100%;
+	opacity: 0.7;
+}
+
+#decentraland img:hover{
+	opacity: 1;
+}
