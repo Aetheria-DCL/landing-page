@@ -2,6 +2,7 @@ body {
 	color: #ddd;
 	padding: 0;
 	margin: 0;
+	font-family: 'Andale Mono', monospace;
 }
 
 .main {
@@ -9,13 +10,18 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	min-height: 100vh;
+	min-height: 90vh;
 	background: linear-gradient(217deg, rgba(10,10,10,0.9), rgba(10,10,10,0.9)), url("background.jpg");
 	background-size: cover;
 	background-position: center center;
 }
 
-.heading h1, h2{
+.main-arrows {
+	font-weight: 900;
+
+}
+
+.heading h1, h2, h3{
 	text-align: center;
 	font-family: 'Andale Mono', monospace;
 }
@@ -68,4 +74,37 @@ body {
 
 #decentraland img:hover{
 	opacity: 1;
+}
+
+.about-us {
+	display: flex;
+	justify-content: center;
+	padding: 0 40px;
+	background-color: #1c1c1c;
+}
+
+.about-us-content {
+	padding: 60px 0;
+	max-width: 800px;
+}
+
+.about-us-content p, h3, h4 {
+	padding: 20px 0;
+}
+
+.get-involved {
+	color: #1c1c1c;
+	display: flex;
+	justify-content: center;
+	padding: 60px 40px;
+	background-color: #f2f2f2;
+}
+
+.get-involved-content {
+	max-width: 800px;
+}
+
+.get-involved-content-list {
+	display: flex;
+	justify-content: center
 }
