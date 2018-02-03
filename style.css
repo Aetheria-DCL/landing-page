@@ -5,13 +5,25 @@ body {
 	font-family: 'Andale Mono', monospace;
 }
 
+.header {
+	background-color: #f2f2f2;
+}
+
+.header-logo {
+	padding: 5px 10px;
+}
+
+.header-logo img{
+	height: 20px;
+}
+
 .main {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	min-height: 90vh;
-	background: linear-gradient(217deg, rgba(10,10,10,0.9), rgba(10,10,10,0.9)), url("background.jpg");
+	min-height: 100vh;
+	background: linear-gradient(0deg, rgba(10,10,10,1), rgba(5,5,5,0)), url("background.jpg");
 	background-size: cover;
 	background-position: center center;
 }
@@ -50,30 +62,31 @@ body {
 .social-links {
 	display: flex;
 	justify-content: center;
+	align-items: center;
+	padding: 20px;
 }
 
 .social-links img{
 	width: 2em;
 	padding: 0.5em;
-	opacity: 0.5;
+	opacity: 1;
 }
 
 .social-links img:hover {
-	opacity: 1;
-}
-
-#decentraland {
-	max-width: 60px;
-	padding: 1em;
-}
-
-#decentraland img{
-	width: 100%;
 	opacity: 0.7;
 }
 
-#decentraland img:hover{
+.social-links-icon {
+	padding: 0 30px;
+}
+
+#decentraland img{
+	width: 60px;
 	opacity: 1;
+}
+
+#decentraland img:hover{
+	opacity: 0.7;
 }
 
 .about-us {
@@ -84,7 +97,7 @@ body {
 }
 
 .about-us-content {
-	padding: 60px 0;
+	padding: 100px 0;
 	max-width: 800px;
 }
 
@@ -92,11 +105,19 @@ body {
 	padding: 20px 0;
 }
 
+.about-us-content a {
+	color: white;
+}
+
+.about-us-content a:hover {
+	text-decoration: none
+}
+
 .get-involved {
 	color: #1c1c1c;
 	display: flex;
 	justify-content: center;
-	padding: 60px 40px;
+	padding: 100px 40px;
 	background-color: #f2f2f2;
 }
 
@@ -104,7 +125,22 @@ body {
 	max-width: 800px;
 }
 
-.get-involved-content-list {
+.get-involved-content-logo {
+	padding-top: 50px;
 	display: flex;
-	justify-content: center
+	justify-content: center;
+}
+
+.get-involved-content-logo img {
+	max-height: 30px;
+}
+
+.get-involved-content-lists {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.get-involved-content-list {
+	max-width: 400px;
 }
